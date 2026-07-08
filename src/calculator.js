@@ -3,10 +3,11 @@ export function summarizeNumbers(values) {
     throw new TypeError("values must be an array");
   }
 
-  const total = values.reduce((sum, value) => sum + value, 0);
+  const numbers = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+  const total = numbers.reduce((sum, value) => sum + value, 0);
   return {
-    count: values.length,
+    count: numbers.length,
     total,
-    average: values.length === 0 ? 0 : total / values.length,
+    average: numbers.length === 0 ? 0 : total / numbers.length,
   };
 }
