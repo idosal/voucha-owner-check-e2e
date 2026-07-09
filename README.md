@@ -10,3 +10,5 @@ The important policy is in `.github/voucha.yml`:
 - `require_approval: never` lets an owner-created smoke-test PR go straight to
   the challenge.
 - `min_changed_lines: 0` and `skip_paths: []` keep tiny fixture PRs eligible.
+
+Smoke run D verifies the live challenge result and browser-verification path.
