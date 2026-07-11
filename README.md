@@ -81,10 +81,9 @@ contributors while VOUCHA retains the challenge link and status. See the
 policy model.
 
 This demo deliberately enables every outcome label. A successful challenge
-adds `pr-comprehension:passed`; a failed attempt adds
-`pr-comprehension:failed`; and a pass with strong automation evidence adds
-`pr-comprehension:flagged`. VOUCHA removes stale outcome labels when the check
-state changes.
+adds `VOUCHA:passed`; a failed attempt adds `VOUCHA:failed`; and a pass with
+strong automation evidence adds `VOUCHA:flagged`. VOUCHA removes stale outcome
+labels when the check state changes.
 
 ## Run the fixture
 

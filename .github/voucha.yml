@@ -20,9 +20,9 @@ output:
   comments: detailed
   labels:
     # Enable every outcome label so the public demo exposes the full contract.
-    passed: true
-    failed: true
-    flagged: true
+    passed: true # VOUCHA:passed
+    failed: true # VOUCHA:failed
+    flagged: true # VOUCHA:flagged
   contributor_message: >
     Thanks for contributing to the VOUCHA demo, {{author}}. Please complete
     this one-question comprehension check when you're ready.
