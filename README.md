@@ -10,7 +10,7 @@ author completes a short challenge generated from the actual diff.
 · **[Product site](https://voucha.dev)**
 · **[Documentation](https://voucha.dev/docs/)**
 
-![VOUCHA uses repository-specific contributor wording in its managed pull request comment](docs/screenshots/voucha-custom-comment.jpg)
+![VOUCHA records the passed challenge and maintainer risk report in its managed pull request comment](docs/screenshots/voucha-custom-comment.jpg)
 
 ## What this demo proves
 
@@ -41,7 +41,7 @@ author completes a short challenge generated from the actual diff.
 5. **Complete the challenge.** The author answers without agent assistance.
    VOUCHA then updates the check and records the outcome on the PR.
 
-![VOUCHA author verification flow](docs/screenshots/voucha-author-verification.jpg)
+![VOUCHA records the completed challenge and public attestation](docs/screenshots/voucha-challenge-result.jpg)
 
 ## Demo policy
 
