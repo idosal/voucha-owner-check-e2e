@@ -18,7 +18,11 @@ skip_paths: []
 
 output:
   comments: detailed
-  labels: true
+  labels:
+    # Enable every outcome label so the public demo exposes the full contract.
+    passed: true
+    failed: true
+    flagged: true
   contributor_message: >
     Thanks for contributing to the VOUCHA demo, {{author}}. Please complete
     this one-question comprehension check when you're ready.

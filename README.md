@@ -5,8 +5,8 @@ inspectable pull request: a repository policy selects the PR for a
 comprehension check, VOUCHA asks the author to verify from GitHub, and the
 author completes a short challenge generated from the actual diff.
 
-**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/7)**
-· **[Install VOUCHA](https://github.com/apps/voucha-app/installations/new)**
+**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/10)**
+· **[Install VOUCHA](https://github.com/apps/voucha-checks/installations/new)**
 · **[Product site](https://voucha.dev)**
 · **[Documentation](https://voucha.dev/docs/)**
 
@@ -21,12 +21,14 @@ author completes a short challenge generated from the actual diff.
   receives a user token and cannot comment or answer on the author's behalf.
 - Questions come from the PR diff, while the resulting check and attestation
   remain visible in the pull-request record.
+- Repository settings independently control passed, failed, and suspicious-pass
+  labels; the demo enables all three so their lifecycle is visible on GitHub.
 - AI assistance may be used to author and test the code. Challenge answers must
   come from the PR author's own understanding.
 
 ## Walk through the live pull request
 
-1. **Read the change.** [PR #7](https://github.com/idosal/voucha-owner-check-e2e/pull/7)
+1. **Read the change.** [PR #10](https://github.com/idosal/voucha-owner-check-e2e/pull/10)
    adds inclusive range selection to a tiny calculator, together with focused
    Node.js tests.
 2. **Inspect the policy.** [`.github/voucha.yml`](.github/voucha.yml) removes
@@ -60,6 +62,11 @@ min_changed_lines: 0
 skip_paths: []
 
 output:
+  comments: detailed
+  labels:
+    passed: true
+    failed: true
+    flagged: true
   contributor_message: >
     Thanks for contributing to the VOUCHA demo, {{author}}. Please complete
     this one-question comprehension check when you're ready.
@@ -72,6 +79,12 @@ also use `output.contributor_message` to match the tone they use with their own
 contributors while VOUCHA retains the challenge link and status. See the
 [configuration reference](https://voucha.dev/docs/configuration/) for the full
 policy model.
+
+This demo deliberately enables every outcome label. A successful challenge
+adds `pr-comprehension:passed`; a failed attempt adds
+`pr-comprehension:failed`; and a pass with strong automation evidence adds
+`pr-comprehension:flagged`. VOUCHA removes stale outcome labels when the check
+state changes.
 
 ## Run the fixture
 
