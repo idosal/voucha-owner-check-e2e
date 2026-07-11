@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { summarizeNumbers } from "../src/calculator.js";
+import { formatNumberList, summarizeNumbers } from "../src/calculator.js";
 
 test("summarizes a number set", () => {
   assert.deepEqual(summarizeNumbers([3, 8, -2, 5]), {
@@ -24,4 +24,9 @@ test("rejects non-array input", () => {
     name: "TypeError",
     message: "values must be an array",
   });
+});
+
+test("formats a number list for display", () => {
+  assert.equal(formatNumberList([3, 8, -2]), "3, 8, -2");
+  assert.equal(formatNumberList([]), "");
 });

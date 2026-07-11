@@ -10,3 +10,11 @@ export function summarizeNumbers(values) {
     average: values.length === 0 ? 0 : total / values.length,
   };
 }
+
+export function formatNumberList(values) {
+  if (!Array.isArray(values)) {
+    throw new TypeError("values must be an array");
+  }
+
+  return values.join(", ");
+}
