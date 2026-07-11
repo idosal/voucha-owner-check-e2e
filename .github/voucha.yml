@@ -7,6 +7,9 @@ gates:
 # collaborators are not exempt in this repository.
 trust:
   default_author_associations: []
+  vouch:
+    enabled: true
+    file: .github/VOUCHED.td
 
 # Keep the demo short. An owner-authored PR becomes ready for the challenge
 # immediately instead of waiting for maintainer approval.
