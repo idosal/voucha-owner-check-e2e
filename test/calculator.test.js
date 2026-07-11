@@ -25,3 +25,12 @@ test("rejects non-array input", () => {
     message: "values must be an array",
   });
 });
+
+test("rejects arrays containing non-finite values", () => {
+  for (const value of [Number.NaN, Number.POSITIVE_INFINITY, "3"]) {
+    assert.throws(() => summarizeNumbers([1, value, 2]), {
+      name: "TypeError",
+      message: "values must contain only finite numbers",
+    });
+  }
+});
