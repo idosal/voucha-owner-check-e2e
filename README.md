@@ -5,12 +5,12 @@ inspectable pull request: a repository policy selects the PR for a
 comprehension check, VOUCHA asks the author to verify from GitHub, and the
 author completes a short challenge generated from the actual diff.
 
-**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/6)**
+**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/7)**
 · **[Install VOUCHA](https://github.com/apps/voucha-app/installations/new)**
 · **[Product site](https://voucha.dev)**
 · **[Documentation](https://voucha.dev/docs/)**
 
-![VOUCHA requests a comprehension check on the demo pull request](docs/screenshots/voucha-pr-check.jpg)
+![VOUCHA uses repository-specific contributor wording in its managed pull request comment](docs/screenshots/voucha-custom-comment.jpg)
 
 ## What this demo proves
 
@@ -26,9 +26,9 @@ author completes a short challenge generated from the actual diff.
 
 ## Walk through the live pull request
 
-1. **Read the change.** [PR #6](https://github.com/idosal/voucha-owner-check-e2e/pull/6)
-   adds minimum, maximum, and spread metrics to a tiny calculator, together with
-   focused Node.js tests.
+1. **Read the change.** [PR #7](https://github.com/idosal/voucha-owner-check-e2e/pull/7)
+   adds inclusive range selection to a tiny calculator, together with focused
+   Node.js tests.
 2. **Inspect the policy.** [`.github/voucha.yml`](.github/voucha.yml) removes
    the normal owner exemption for this demo and sends the PR directly to one
    diff-specific question.
@@ -39,7 +39,7 @@ author completes a short challenge generated from the actual diff.
 5. **Complete the challenge.** The author answers without agent assistance.
    VOUCHA then updates the check and records the outcome on the PR.
 
-![VOUCHA author verification for the curated demo pull request](docs/screenshots/voucha-author-verification.jpg)
+![VOUCHA author verification flow](docs/screenshots/voucha-author-verification.jpg)
 
 ## Demo policy
 
