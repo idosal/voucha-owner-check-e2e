@@ -5,7 +5,7 @@ inspectable pull request: a repository policy selects the PR for a
 comprehension check, VOUCHA asks the author to verify from GitHub, and the
 author completes a short challenge generated from the actual diff.
 
-**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/10)**
+**[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/11)**
 · **[Install VOUCHA](https://github.com/apps/voucha-checks/installations/new)**
 · **[Product site](https://voucha.dev)**
 · **[Documentation](https://voucha.dev/docs/)**
@@ -28,7 +28,7 @@ author completes a short challenge generated from the actual diff.
 
 ## Walk through the live pull request
 
-1. **Read the change.** [PR #10](https://github.com/idosal/voucha-owner-check-e2e/pull/10)
+1. **Read the change.** [PR #11](https://github.com/idosal/voucha-owner-check-e2e/pull/11)
    adds inclusive range selection to a tiny calculator, together with focused
    Node.js tests.
 2. **Inspect the policy.** [`.github/voucha.yml`](.github/voucha.yml) removes
