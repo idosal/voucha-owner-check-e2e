@@ -58,11 +58,18 @@ trust:
 require_approval: never
 min_changed_lines: 0
 skip_paths: []
+
+output:
+  contributor_message: >
+    Thanks for contributing to the VOUCHA demo, {{author}}. Please complete
+    this one-question comprehension check when you're ready.
 ```
 
 In a normal repository, owners, members, and collaborators are trusted by
 default, docs-only and tiny changes can be exempt, and first-time contributors
-can require maintainer approval before a challenge is created. See the
+can require maintainer approval before a challenge is created. Repositories can
+also use `output.contributor_message` to match the tone they use with their own
+contributors while VOUCHA retains the challenge link and status. See the
 [configuration reference](https://voucha.dev/docs/configuration/) for the full
 policy model.
 
