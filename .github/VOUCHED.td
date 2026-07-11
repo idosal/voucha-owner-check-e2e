@@ -1,0 +1,2 @@
+# Temporary production validation for VOUCHA's Vouch integration.
+github:idosal validation-only vouch
