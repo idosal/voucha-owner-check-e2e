@@ -6,7 +6,7 @@ comprehension check, VOUCHA asks the author to verify from GitHub, and the
 author completes a short challenge generated from the actual diff.
 
 **[Open the curated demo PR](https://github.com/idosal/voucha-owner-check-e2e/pull/7)**
-· **[Install VOUCHA](https://github.com/apps/voucha-app/installations/new)**
+· **[Install VOUCHA](https://github.com/apps/voucha-checks/installations/new)**
 · **[Product site](https://voucha.dev)**
 · **[Documentation](https://voucha.dev/docs/)**
 
