@@ -12,6 +12,13 @@ trust:
 # immediately instead of waiting for maintainer approval.
 require_approval: never
 
+exemptions:
+  - type: linked_issue_match
+    require_same_repo: true
+    require_trusted_signal: true
+    min_match_score: 0.7
+    max_issues: 5
+
 # Make the deliberately small demo PR eligible for a challenge.
 min_changed_lines: 0
 skip_paths: []
