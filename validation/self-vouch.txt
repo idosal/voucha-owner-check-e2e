@@ -1,0 +1,1 @@
+Production validation probe: contributor branch cannot self-vouch.
