@@ -8,6 +8,9 @@ test("summarizes a number set", () => {
     count: 4,
     total: 14,
     average: 3.5,
+    positiveCount: 3,
+    negativeCount: 1,
+    zeroCount: 0,
   });
 });
 
@@ -16,6 +19,20 @@ test("uses neutral summary values for an empty set", () => {
     count: 0,
     total: 0,
     average: 0,
+    positiveCount: 0,
+    negativeCount: 0,
+    zeroCount: 0,
+  });
+});
+
+test("counts positive, negative, and zero values", () => {
+  assert.deepEqual(summarizeNumbers([-4, 0, 3, 0, 9]), {
+    count: 5,
+    total: 8,
+    average: 1.6,
+    positiveCount: 2,
+    negativeCount: 1,
+    zeroCount: 2,
   });
 });
 
