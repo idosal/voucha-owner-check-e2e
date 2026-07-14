@@ -1,15 +1,15 @@
 gates:
   - type: multiple_choice
-    questions: 1
-    pass_threshold: 1
+    questions: 4
+    pass_threshold: 3
 
 # Exercise the owner/member path in the public demo: owners, members, and
 # collaborators are not exempt in this repository.
 trust:
   default_author_associations: []
 
-# Keep the demo short. An owner-authored PR becomes ready for the challenge
-# immediately instead of waiting for maintainer approval.
+# Keep owner-authored PRs ready for the challenge immediately instead of
+# waiting for maintainer approval.
 require_approval: never
 
 # Make the deliberately small demo PR eligible for a challenge.
@@ -25,4 +25,4 @@ output:
     flagged: true # VOUCHA:flagged
   contributor_message: >
     Thanks for contributing to the VOUCHA demo, {{author}}. Please complete
-    this one-question comprehension check when you're ready.
+    this four-question comprehension check when you're ready.
